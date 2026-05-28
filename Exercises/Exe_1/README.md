@@ -1,4 +1,4 @@
-# [name of the exercise/ folder name]
+# Exe 1 - simple topology
 
 ## Table of Content
 
@@ -6,26 +6,37 @@
 - [References](#references-linkimages-of-topology)
 - [Topology](#images-of-the-topology)
 - [Automation Script](#link-to-scripts)
-    - [Disclaimer](#disclaimer)
+    - [Basic Config](#commands-used)
+- [Disclaimer](#disclaimer)
+
+---
 
 ## Description
 
+Simple entry-level topology, done the basic setup of the systems, only that
+
+---
 
 ## References (link/images of topology)
 
 ![Reference image from instructor][ref_image]
 
+---
 
 ## (Images of the) Topology
 
-![Image of the topology] [final_image]
+![Image of the topology][final_image]
+
+---
 
 ## Link to scripts
 
 NOT AVAILABLE 
-Reason: this is initial basic config, refer to [Command Used](#commands-used) for more info about this config
+Reason: this is initial basic config only, refer to [Command Used](#commands-used) for more info about this config
 
-### Commands used
+---
+
+### Commands Used
 
 On Router(R1):
 
@@ -52,6 +63,7 @@ On Router(R1):
                 ip address 192.168.3.253 255.255.255.224
                 no shutdown
             
+---
 
 On Left Switch (S1):
 
@@ -76,6 +88,8 @@ On Left Switch (S1):
                 no shutdown
                 exit
 
+---
+
 On Right Switch (R2):
 
     enable
@@ -98,24 +112,29 @@ On Right Switch (R2):
                 ip address 192.168.1.201 255.255.255.224
                 no shutdown
                 exit
-            
+
+---
+
 Set Up end device via GUI with the following IPs (in counter clockwise order):
 - 192.168.1.1 /27
 - 192.168.1.2 /27
 - 192.168.1.3 /27
 - 192.168.1.4 /27
 
-
-### Disclaimer
+---
+## Disclaimer
 
 Combo user/pass: cisco/cisco
 General password: cisco
+
+---
 
 [x] Tested on cisco packet tracer
 [ ] Tested IRL
 [ ] Used AI in some way (specify):
     - 
 
+---
 
 [ref_image]: Exe_1.png "Reference image for instructor"
 

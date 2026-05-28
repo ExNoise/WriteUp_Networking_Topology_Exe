@@ -1,0 +1,25 @@
+hostname R3
+no ip domain lookup
+line con 0
+logging sync
+exec-time 0 0
+exit
+banner motd # Sei su R3, Path Control utilizzando PBR #
+
+interface fa3/0
+description Link --> R2
+ip add 172.16.1.2 255.255.255.252
+no shut
+exit
+
+interface S6/0
+description Link serial --> R1
+ip add 172.16.2.2 255.255.255.252
+no shut
+exit
+
+interface fa0/0
+description Link --> R5
+ip add 192.168.0.1 255.255.255.252
+no shut
+exit

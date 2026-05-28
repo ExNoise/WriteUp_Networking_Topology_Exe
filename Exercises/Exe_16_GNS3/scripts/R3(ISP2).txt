@@ -1,0 +1,21 @@
+hostname ISP2
+
+interface Loopback0
+description Simula Internet Web Server
+ip address 209.165.200.254 255.255.255.255
+
+interface Loopback1
+description ISP2 DNS Server
+ip address 209.165.202.158 255.255.255.255
+
+interface Serial6/0
+description ISP2 --> R1
+ip address 209.165.202.129 255.255.255.252
+bandwidth 128
+no shutdown
+
+interface Serial6/1
+description ISP2 --> ISP1
+ip address 209.165.200.226 255.255.255.252
+bandwidth 128
+no shutdown

@@ -1,0 +1,25 @@
+part. 2 use protocol ospf after having set up the topology
+
+without using lo0 in r3
+
+
+AFTER:
+
+use this command for the final check after setting up the ospf protocol:
+foreach address {10.2.2.1
+192.168.1.5
+192.168.1.6
+172.24.1.17
+172.24.1.18
+} {
+ping $address }
+
+
+AFTER pt.2:
+
+configure igp to ping from r2 the lo0 of r3
+
+
+AFTER pt.3:
+add r2 route reflector to r1 and r3
+then ping from r1 to lo0 on r3

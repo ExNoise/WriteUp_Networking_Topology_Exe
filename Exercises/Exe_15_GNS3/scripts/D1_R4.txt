@@ -1,0 +1,19 @@
+hostname R4_D1
+no ip domain lookup
+line con 0
+exec-timeout 0 0
+logging synchronous
+exit
+banner motd # Sei su R4_D1, Path Control utilizzando PBR #
+
+interface fa0/0
+description Link --> R1
+ip address 10.10.0.2 255.255.255.252
+no shut
+exit
+
+interface Loopback 2
+description Interfacccia che simula una network
+ip ospf network point-to-point
+ip address 10.10.2.1 255.255.255.0
+exit

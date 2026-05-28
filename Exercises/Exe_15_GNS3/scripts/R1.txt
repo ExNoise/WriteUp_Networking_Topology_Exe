@@ -1,0 +1,25 @@
+hostname R1
+no ip domain lookup
+line con 0
+logging sync
+exec-time 0 0
+exit
+banner motd # Sei su  R1, Path Control utilizzando PBR #
+
+interface FastEthernet 3/0
+description link --> R2
+ip add 172.16.0.2 255.255.255.252
+no shut
+exit
+
+interface S6/0
+description link seriale --> R3
+ip add 172.16.2.1 255.255.255.252
+no shut
+exit
+
+interface FastEthernet 0/0
+description link --> R4
+ip add 10.10.0.1 255.255.255.252
+no shut
+exit

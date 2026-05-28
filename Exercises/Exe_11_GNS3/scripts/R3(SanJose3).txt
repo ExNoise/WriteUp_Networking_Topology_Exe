@@ -1,0 +1,5 @@
+hostname SanJose3
+!
+interface Serial0/0/1
+ip address 172.24.1.18 255.255.255.0
+no shutdown

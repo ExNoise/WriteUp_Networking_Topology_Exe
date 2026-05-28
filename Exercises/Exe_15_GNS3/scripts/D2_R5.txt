@@ -1,0 +1,19 @@
+hostname R5_D2
+no ip domain lookup
+line con 0
+logging sync
+exec-time 0 0
+exit
+banner motd # Sei su R5_D2, Path Control Using PBR #
+
+interface fa0/0
+description Link--> R3
+ip address 192.168.0.2 255.255.255.252
+no shut
+exit
+
+interface Loopback 1
+description Interfaccia che simula un network
+ip ospf network point-to-point
+ip address 192.168.1.1 255.255.255.0
+exit

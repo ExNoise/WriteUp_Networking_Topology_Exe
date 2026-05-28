@@ -1,0 +1,19 @@
+general notes:
+
+- local preferences
+
+Tips:
+use scripts in /scripts for config the routers
+
+after config:
+1. r2-r3 config eigrp
+2. r2 lo0 set up
+3. r3 lo0 set up
+
+loopbacks as neighbor
+
+4. ping respective loopbacks
+
+5. adjacency on respective loopbacks on the AS 64512
+
+6. connect the 2 AS
