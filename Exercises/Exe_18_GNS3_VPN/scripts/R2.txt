@@ -1,0 +1,10 @@
+Hostname R2
+
+interface serial 6/1
+ip address 192.168.1.2 255.255.255.252
+no shut
+
+
+interface serial 6/0
+ip address 192.168.1.5 255.255.255.252
+no shut
