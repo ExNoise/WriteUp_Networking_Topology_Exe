@@ -10,8 +10,7 @@ Accertarsi che R4 riesca a pingare le loopback di R1\R2.
 
 Annunciare su R4 la rete rappresentata dalla loopback 0
 
-Verificare la presenza di tutte le route su tutti i router e verificare la loro 
-raggiungibilità con il ping esteso facendo partire i messaggi ICMP dalle rispettive loopback
+Verificare la presenza di tutte le route su tutti i router e verificare la loro raggiungibilità con il ping esteso facendo partire i messaggi ICMP dalle rispettive loopback
 
 Configurare BGP affinchè R1 utilizzi R2 per raggiungere la rete 10.4.4.0/24, SENZA APPORTARE
 ALCUNA MODIFICA SU R1\R2.
