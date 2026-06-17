@@ -1,0 +1,9 @@
+Accesso SSH su tutti i dispositivi
+Su tutti i dispositivi bloccare l'accesso SSH dopo 3 tentativi falliti in 60 secondi
+Su R6 configurare ZBFW (2 zone) (NON E' POSSIBILE FARLO SU PACKET TRACER)
+Su SW1 : Port-Security, PortFast e BPDU Guard
+In OSPF:Summarization inter-area e delle route esterne e modifica del Router-ID facendo
+seguito alla numerazione dei router (es R5=5.5.5.5)
+Su R2: forzare il traffico non HTTP/HTTPS verso R4 (NON E' POSSIBILE FARLO SU PACKET TRACER)
+Trasmissione dei Syslog messages sull'apposito server
+Allineamento del clock via NTP (con autenticazione=

@@ -1,0 +1,9 @@
+AS 4567: in EIGRP 4567 dichiarare la subnet 10.100.1.0/29 e le reti associate alle loopback 0
+In AS 4567:usare le loopback per il peering iBGP attraverso la definizione di un peer group
+Configurare EBGP tra i vari AS
+In R1 (AS1)annunciare le due loopback
+Fare in modo che l'AS 4567 utilizzi il link R3-R5 per raggiungere la loopback 2.0.0.0/24
+Fare in modo che l'AS 4567 utilizzi il link R2-R4 per raggiungere la loopback 1.0.0.0/24
+
+
+as- bgp
